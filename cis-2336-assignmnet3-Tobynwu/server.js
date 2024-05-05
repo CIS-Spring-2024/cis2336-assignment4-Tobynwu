@@ -7,7 +7,7 @@ const { truncate } = require('fs');
 const app = express();
 const port = 5500;
 
-// Menu items for calculation
+
 const menuItems = [
     { name: 'Roman Salad', price: 5.99 },
     { name: 'Breadsticks', price: 6.50 },
@@ -17,12 +17,12 @@ const menuItems = [
     { name: 'Chocolate Ice Cream', price: 2.00 }
 ];
 
-// Middleware setup
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname)));
 
-// Error Handling Middleware
+
 app.use((err, req, res, next) => {
     if (err instanceof SyntaxError && err.status === 400 && 'body' in err) {
         return res.status(400).json({ success: false, errors: ['Invalid JSON input'] });
@@ -30,13 +30,13 @@ app.use((err, req, res, next) => {
     next();
 });
 
-// Order processing route
+
 app.post('/process-order', (req, res) => {
     const order = req.body;
     let total = 0;
     let errors = [];
 
-    // Calculate total
+
     menuItems.forEach(item => {
         const qty = parseInt(order[item.name]) || 0;
         if (qty < 0 || qty > 10) {
@@ -46,7 +46,7 @@ app.post('/process-order', (req, res) => {
         }
     });
 
-    // Respond with errors if any
+    
     if (errors.length > 0) {
         return res.status(400).json({ success: false, errors });
     }
@@ -54,12 +54,12 @@ app.post('/process-order', (req, res) => {
     res.json({ success: true, total: total.toFixed(2) });
 });
 
-// Order confirmation page route
+
 app.get('/order-confirmation', (req, res) => {
     res.sendFile(path.join(__dirname, 'order-confirmation.html'));
 });
 
-// Start server
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
