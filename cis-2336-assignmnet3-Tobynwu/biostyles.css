@@ -1,0 +1,113 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: red;
+    padding: 20px 0;
+}
+
+header h1{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: antiquewhite;
+    display: inline-block;
+}
+
+img{
+    isolation: isolate;
+    padding: auto;
+    width: 300px;
+    height: auto;
+    border: 5px solid white;
+}
+
+nav {
+    float: right;
+}
+
+nav ul{
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.4s;
+}
+
+nav ul li a:hover {
+    background-color: #900;
+}
+
+.owner-bio {
+    text-decoration: none;
+    /*background-color: rgba(78, 50, 50, 0.8); */
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+.owner-bio::before{
+    content:"";
+    position: absolute;
+    background-image: url('https://wallpapercave.com/wp/wp10321955.png');
+    background-size: cover;
+    background-position: center; 
+    inset: 0;
+    opacity: .2; 
+}
+
+.owner-info{
+    isolation: isolate;
+    text-decoration: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.owner-info h1 {
+    font-size: 36px;
+    color: red;
+}
+
+.owner-info h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.owner-info p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+
+footer {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

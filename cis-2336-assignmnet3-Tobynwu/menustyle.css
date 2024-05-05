@@ -1,0 +1,165 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0; 
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    background-image: url('https://wallpapercave.com/wp/wp10321955.png');
+    background-size: cover;
+    background-position: center; 
+    inset: 0;
+    opacity: .2;
+    z-index: -1;
+}
+
+header {
+    background-color: red;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+
+.home-buttons {
+    position: fixed;
+    right: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.home-buttons button {
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(255, 77, 77, 1);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold; 
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.home-buttons button:hover {
+    background-color: #cc0000;
+}
+form button[type='submit'] {
+    background-color: rgba(255, 77, 77, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button[type='submit']:hover {
+    background-color: rgba(204, 0, 0, 1);
+}
+
+#menu_cat {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1rem 0;
+}
+
+#menu_cat button {
+    padding: 20px;
+    min-width: 200px;
+    background-color: rgba(255, 77, 77, 1);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+#menu_cat button:hover {
+    background-color: rgba(204, 0, 0, 1);
+}
+
+#menu_item {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu_item {
+    padding: 1rem;
+    text-align: center;
+    flex-basis: calc(33.333% - 20px);
+}
+
+.menu_item h2 {
+    color: #a30b0b;
+    font-size: 1.5rem;
+}
+
+.menu_item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.menu_item p {
+    font-size: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.menu_item span {
+    font-weight: bold;
+    color: #d41313;
+}
+
+footer {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    #menu_cat {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu_cat button, .menu_item {
+        width: 100%; 
+    }
+
+    .menu_item {
+        flex-basis: 100%;
+    }
+}
