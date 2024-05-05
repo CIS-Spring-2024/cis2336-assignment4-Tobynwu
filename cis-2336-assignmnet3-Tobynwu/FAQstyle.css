@@ -1,7 +1,6 @@
-
 body {
-    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
@@ -15,7 +14,6 @@ body::before{
     opacity:0.2;
     }
 
-
 header {
     background-color: #b31b1b;
     color: white;
@@ -25,19 +23,22 @@ header {
 
 header h1 {
     margin: 0;
+    color: #f4f4f4;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-.container h1{
+h1 {
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    color: black; 
+    color:rgb(29, 28, 28);
 }
-
 h2 {
     font-family: 'Arial', sans-serif;
     font-weight: bold;
@@ -56,26 +57,21 @@ h1 {
 }
 
 .home-buttons button {
-    background-color: rgba(255, 77, 77, 1); 
+    background-color: rgba(255, 77, 77, 1);
     color: white;
     border: none;
     border-radius: 5px;
     margin: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .home-buttons button:hover {
     background-color: #8b0000;
 }
 
-.locations-map {
-    display: flex;
-    justify-content: space-between;
-}
-
-.locations, .map, .normal-hours, .holidays-closures, .social-footnote {
+.faqs, .common-questions, .ask-questions, .locations, .map, .normal-hours, .holidays-closures, .social-footnote {
     background-color: rgba(255, 77, 77, 1);
     color: #ffffff;
     border-radius: 8px;
@@ -85,18 +81,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.locations {
-    width: 30%;
-    height: 250px;
-    margin-bottom: 15px;
-}
-
-.map {
-    width: 60%;
-    height: 250px;
-}
-
-.normal-hours, .holidays-closures, .social-footnote {
+.faqs, .common-questions, .ask-questions {
     width: 100%;
 }
 
@@ -109,9 +94,39 @@ ul li {
     margin-bottom: 8px;
 }
 
+.ask-questions form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ask-questions form label, .ask-questions form input, .ask-questions form textarea, .ask-questions form button {
+    width: 80%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.ask-questions form input, .ask-questions form textarea {
+    border: none;
+    outline: none;
+}
+
+.ask-questions form button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ask-questions form button:hover {
+    background-color: #6a0c0c;
+}
+
 footer {
     text-align: center;
-    background-color: #b31b1b;
+    background-color: #b31b1b; 
     color: white;
     padding: 20px;
 }
@@ -123,4 +138,3 @@ footer p {
 .social-footnote p {
     margin: 5px 0;
 }
-
