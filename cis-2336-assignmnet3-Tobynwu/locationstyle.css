@@ -1,0 +1,110 @@
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #b31b1b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.home-buttons button {
+    background-color: rgba(255, 77, 77, 1); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-buttons button:hover {
+    background-color: #8b0000;
+}
+
+.locations-map {
+    display: flex;
+    justify-content: space-between;
+}
+
+.locations, .map, .normal-hours, .holidays-closures, .social-footnote {
+    background-color: rgba(255, 77, 77, 1); /* Houston Cougar Red */
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 15px 0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.locations {
+    width: 30%;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.map {
+    width: 60%;
+    height: 250px;
+}
+
+.normal-hours, .holidays-closures, .social-footnote {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #b31b1b; /* Houston Cougar Red */
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-footnote p {
+    margin: 5px 0;
+}
+
