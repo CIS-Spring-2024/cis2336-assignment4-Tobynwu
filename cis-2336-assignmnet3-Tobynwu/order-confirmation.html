@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="menustyle.css">
+</head>
+<body>
+    <header>
+        <h1>Order Confirmation</h1>
+    </header>
+    <main>
+        <div class="confirmation">
+            <p>Thank you for your order! Your total is <span id="totalAmount"></span>.</p>
+            <a href="menu.html">Back to Menu</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 University of Houston Sugarland Cafeteria. All rights reserved.</p>
+    </footer>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const total = urlParams.get('total');
+        document.getElementById('totalAmount').textContent = `$${total}`;
+    </script>
+</body>
+</html>
+
