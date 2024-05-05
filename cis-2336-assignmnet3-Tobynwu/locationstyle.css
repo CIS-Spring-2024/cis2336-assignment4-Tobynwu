@@ -17,7 +17,7 @@ body::before{
 
 
 header {
-    background-color: #b31b1b;
+    background-color: #ff0000;
     color: white;
     padding: 20px;
     text-align: center;
@@ -111,7 +111,7 @@ ul li {
 
 footer {
     text-align: center;
-    background-color: #b31b1b;
+    background-color: #ff0000;
     color: white;
     padding: 20px;
 }

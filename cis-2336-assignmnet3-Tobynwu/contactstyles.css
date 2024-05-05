@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    background-image: url('https://wallpapercave.com/wp/wp10321955.png');
+    background-size:cover;
+    opacity:0.2;
+    }
+
+header {
+    background-color: #ff0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.home-buttons button {
+    background-color: rgba(255, 77, 77, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-buttons button:hover {
+    background-color: #8b0000;
+}
+
+.contact-us, .contact-information, .available-hours, .reviews, .social-media, .locations, .map, .normal-hours, .holidays-closures, .social-footnote {
+    background-color: rgba(255, 77, 77, 1);
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 15px 0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us form label, .contact-us form input, .contact-us form textarea, .contact-us form button {
+    width: 80%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-us form input, .contact-us form textarea {
+    border: none;
+    outline: none;
+}
+
+.contact-us form button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us form button:hover {
+    background-color: #6a0c0c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #ff0000;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-footnote p {
+    margin: 5px 0;
+}

@@ -4,7 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Confirmation</title>
-    <link rel="stylesheet" href="menustyle.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        body::before{
+            content:"";
+            position:fixed;
+            inset:0;
+            z-index:-1;
+            background-image: url('https://wallpapercave.com/wp/wp10321955.png');
+            background-size:cover;
+            opacity:0.2;
+        }
+
+        header {
+            background-color:  #ff0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            width: 60%;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .confirmation {
+            background-color:rgba(255, 77, 77, 1);
+            color: white;
+            border-radius: 8px;
+            margin: 15px 0;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .confirmation a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color:  #ff0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .confirmation a:hover {
+            background-color: #6a0c0c;
+        }
+
+        footer {
+            text-align: center;
+            background-color:  #ff0000;
+            color: white;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,4 +101,5 @@
     </script>
 </body>
 </html>
+
 

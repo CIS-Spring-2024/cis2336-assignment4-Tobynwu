@@ -23,7 +23,7 @@ header {
 
 header h1 {
     margin: 0;
-    color: #f4f4f4;
+    color: white;
 }
 
 .container {
@@ -34,10 +34,10 @@ header h1 {
     padding: 20px;
 }
 
-h1 {
+h1{
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    color:rgb(29, 28, 28);
+    color: #333333;
 }
 h2 {
     font-family: 'Arial', sans-serif;
@@ -71,7 +71,7 @@ h1 {
     background-color: #8b0000;
 }
 
-.faqs, .common-questions, .ask-questions, .locations, .map, .normal-hours, .holidays-closures, .social-footnote {
+.student-employment, .employment-info, .regular-application, .social-info, .contact-us, .contact-information, .available-hours, .reviews, .social-media, .locations, .map, .normal-hours, .holidays-closures, .social-footnote {
     background-color: rgba(255, 77, 77, 1);
     color: #ffffff;
     border-radius: 8px;
@@ -81,9 +81,21 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.faqs, .common-questions, .ask-questions {
-    width: 100%;
+.student-employment button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
+
+.student-employment button:hover {
+    background-color: #6a0c0c;
+}
+
 
 ul {
     list-style: none;
@@ -94,39 +106,9 @@ ul li {
     margin-bottom: 8px;
 }
 
-.ask-questions form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ask-questions form label, .ask-questions form input, .ask-questions form textarea, .ask-questions form button {
-    width: 80%;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.ask-questions form input, .ask-questions form textarea {
-    border: none;
-    outline: none;
-}
-
-.ask-questions form button {
-    background-color: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.ask-questions form button:hover {
-    background-color: #6a0c0c;
-}
-
 footer {
     text-align: center;
-    background-color: #ff0000; 
+    background-color: #ff0000;
     color: white;
     padding: 20px;
 }
